@@ -16,8 +16,6 @@ def jugarVariasVeces(n):
     
     return f"Al jugar {n} veces: \nJuan ganó {vecesGanaJuan} veces \nMaria ganó {vecesGanaMaria} veces \n{vecesEmpatan} veces empataron"
             
-        
-
 
 def simularJuego():
     puntajeJuan = juegaJuan()
@@ -32,25 +30,18 @@ def simularJuego():
     
 def juegaJuan():
     puntaje = tirarDados()
-    # print(puntaje)
     if puntaje == 0:
-        puntaje = tirarDados()
-        # print(puntaje)
-        return puntaje
+        return tirarDados()
     elif puntaje <= 3:
-        puntaje = tirarUnDado()
-        # print(puntaje)
-        return puntaje
+        return  tirarUnDado()
     return puntaje
         
 def juegaMaria2():
     puntaje = tirarDados()
     if puntaje == 0:
-        puntaje = tirarDados()
-        return puntaje
+        return tirarDados()
     elif puntaje <= 5:
-        puntaje = tirarUnDado()
-        return puntaje
+        return tirarUnDado()
     return puntaje
 
 def juegaMaria(puntajeJuan):
@@ -63,7 +54,6 @@ def juegaMaria(puntajeJuan):
 
 def tirarDados():
     dados = [random.randint(1, 6), random.randint(1,6)]
-    # print(dados)
     if dados[0] == 4:
         return dados[1]
     elif dados[1] == 4:
