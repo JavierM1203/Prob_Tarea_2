@@ -13,7 +13,7 @@ def jugarVariasVeces(n):
         elif ganador == "Empate":
             vecesEmpatan += 1
     
-    return f"Al jugar {n} veces: \nJuan ganó {vecesGanaJuan} veces \nMaria ganó {vecesGanaMaria} veces \n{vecesEmpatan} veces empataron"      
+    return f"Al jugar {n} veces: \nJuan ganó {vecesGanaJuan} veces \nMaria ganó {vecesGanaMaria} veces \nEmpataron {vecesEmpatan} veces\n"      
 
 def simularJuego():
     puntajeJuan = juegaJuan()
