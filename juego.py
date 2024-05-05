@@ -37,7 +37,7 @@ def juegaMaria(puntajeJuan):
     puntaje = tirarDados()
     if puntaje == 0:
         return tirarDados()
-    elif puntaje < puntajeJuan and puntaje > 0:
+    elif puntaje <= puntajeJuan:
         return tirarUnDado()
     return puntaje
 
